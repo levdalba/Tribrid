@@ -15,7 +15,15 @@ const Navbar = () => {
                     className="links"
                     disableRipple
                 >
-                    <Typography variant="h6" component="div" className="title">
+                    <Typography
+                        variant="h6"
+                        component="div"
+                        className="title"
+                        style={{
+                            fontFamily: "'Kode Mono', monospace",
+                            letterSpacing: '1px',
+                        }}
+                    >
                         <img className="logo" src={logo} alt="" />
                         TriBrid
                     </Typography>

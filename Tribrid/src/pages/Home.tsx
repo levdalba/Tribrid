@@ -1,22 +1,17 @@
 import React, { useState } from 'react'
 import { Typography, Button } from '@mui/material'
 import bg from '../pics/bg.jpg'
+import './Home.css'
 const Home = () => {
     return (
-        <div>
-            <div className="welcome">
-                <img
-                    className="bg"
-                    style={{
-                        width: '1536px',
-                        height: '714.4px',
-                        filter: 'blur(1.5px)',
-                    }}
-                    src={bg}
-                    alt=""
-                />
-            </div>
-        </div>
+        <div
+            className="welcome"
+            style={{
+                backgroundImage: `url(${bg})`,
+                height: '714.4px',
+                filter: 'blur(1.5px)',
+            }}
+        ></div>
     )
 }
 
