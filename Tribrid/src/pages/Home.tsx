@@ -8,7 +8,7 @@ const Home = () => {
                 <img
                     className="bg"
                     style={{
-                        width: '1536   px',
+                        width: '1536px',
                         height: '714.4px',
                         filter: 'blur(1.5px)',
                     }}
