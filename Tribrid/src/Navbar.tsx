@@ -103,8 +103,8 @@ const Navbar = () => {
                     component={Link}
                     to="/contact"
                     sx={{
-                        border: '2px solid #28D52E',
-                        color: '#28D52E',
+                        border: '2px solid #4C9900',
+                        color: '#00FF00',
                         borderRadius: '3px',
                         padding: '7px',
                         marginRight: '7px',
