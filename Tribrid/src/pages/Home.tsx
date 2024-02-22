@@ -7,11 +7,40 @@ const Home = () => {
         <div
             className="welcome"
             style={{
-                backgroundImage: `url(${bg})`,
                 height: '714.4px',
-                filter: 'blur(1.5px)',
             }}
-        ></div>
+        >
+            <div className="welcome-text">
+                <Typography
+                    variant="h2"
+                    component="div"
+                    className="title"
+                    style={{
+                        fontFamily: "'Kode Mono', monospace",
+                        letterSpacing: '1px',
+                        color: 'white',
+                    }}
+                >
+                    Welcome to Tribrid
+                </Typography>
+                <Button
+                    variant="contained"
+                    color="primary"
+                    sx={{
+                        padding: '7px',
+                        marginRight: '7px',
+                        fontVariant: 'roboto',
+                        '&:hover': {
+                            backgroundColor: '#B4D4FF',
+                            color: 'white',
+                            transition: '0.6s',
+                        },
+                    }}
+                >
+                    Get Started
+                </Button>
+            </div>
+        </div>
     )
 }
 
