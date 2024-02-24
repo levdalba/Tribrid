@@ -1,8 +1,33 @@
-import React from 'react'
 import { AppBar, Toolbar, Typography, Button } from '@mui/material'
+
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import logo from './pics/logo.jpg'
+import { styled } from '@mui/system'
+
+const StyledButton = styled(Button)({
+    padding: '7px',
+    marginRight: '7px',
+    position: 'relative',
+    overflow: 'hidden',
+    '&:hover': {
+        color: '#B4D4FF',
+    },
+    '&:hover:before': {
+        transform: 'scaleX(1)',
+    },
+    '&:before': {
+        content: '""',
+        position: 'absolute',
+        width: '100%',
+        height: '2px',
+        bottom: '0',
+        left: '0',
+        backgroundColor: '#B4D4FF',
+        transform: 'scaleX(0)',
+        transition: 'transform 0.4s ease-in-out',
+    },
+})
 
 const Navbar = () => {
     return (
@@ -32,54 +57,96 @@ const Navbar = () => {
                 <div className="links">
                     <Button
                         component={Link}
-                        to="/portfolio"
+                        to="/"
                         color="inherit"
                         sx={{
                             padding: '7px',
                             marginRight: '7px',
                             fontVariant: 'roboto',
-                            '&:hover': {
+                            position: 'relative',
+                            transition: 'color 2s ease-in-out',
+                            '&:before': {
+                                content: '""',
+                                position: 'absolute',
+                                width: '100%',
+                                height: '2px',
+                                bottom: '0',
+                                left: '0',
                                 backgroundColor: '#B4D4FF',
-                                color: 'white',
-                                transition: '0.6s',
+                                transform: 'scaleX(0)',
+                                transition: 'transform 0.4s ease-in-out',
+                            },
+                            '&:hover': {
+                                color: '#B4D4FF',
+                            },
+                            '&:hover:before': {
+                                transform: 'scaleX(1)',
                             },
                         }}
                     >
                         Home
                     </Button>
                     <Button
-                        component={Link}
-                        to="/portfolio"
+                        component="a"
+                        href="#service"
                         color="inherit"
                         sx={{
                             padding: '7px',
                             marginRight: '7px',
                             fontVariant: 'roboto',
-                            '&:hover': {
+                            position: 'relative',
+                            transition: 'color 2s ease-in-out',
+                            '&:before': {
+                                content: '""',
+                                position: 'absolute',
+                                width: '100%',
+                                height: '2px',
+                                bottom: '0',
+                                left: '0',
                                 backgroundColor: '#B4D4FF',
-                                color: 'white',
-                                transition: '0.6s',
+                                transform: 'scaleX(0)',
+                                transition: 'transform 0.4s ease-in-out',
+                            },
+                            '&:hover': {
+                                color: '#B4D4FF',
+                            },
+                            '&:hover:before': {
+                                transform: 'scaleX(1)',
                             },
                         }}
                     >
                         Service
                     </Button>
                     <Button
-                        component={Link}
-                        to="/portfolio"
+                        component="a"
+                        href="#work"
                         color="inherit"
                         sx={{
                             padding: '7px',
                             marginRight: '7px',
                             fontVariant: 'roboto',
-                            '&:hover': {
+                            position: 'relative',
+                            transition: 'color 2s ease-in-out',
+                            '&:before': {
+                                content: '""',
+                                position: 'absolute',
+                                width: '100%',
+                                height: '2px',
+                                bottom: '0',
+                                left: '0',
                                 backgroundColor: '#B4D4FF',
-                                color: 'white',
-                                transition: '0.6s',
+                                transform: 'scaleX(0)',
+                                transition: 'transform 0.4s ease-in-out',
+                            },
+                            '&:hover': {
+                                color: '#B4D4FF',
+                            },
+                            '&:hover:before': {
+                                transform: 'scaleX(1)',
                             },
                         }}
                     >
-                        Portfolio
+                        Work
                     </Button>
                     <Button
                         component={Link}
@@ -88,10 +155,25 @@ const Navbar = () => {
                         sx={{
                             padding: '7px',
                             marginRight: '7px',
-                            '&:hover': {
+                            fontVariant: 'roboto',
+                            position: 'relative',
+                            transition: 'color 2s ease-in-out',
+                            '&:before': {
+                                content: '""',
+                                position: 'absolute',
+                                width: '100%',
+                                height: '2px',
+                                bottom: '0',
+                                left: '0',
                                 backgroundColor: '#B4D4FF',
-                                color: 'white',
-                                transition: '0.6s',
+                                transform: 'scaleX(0)',
+                                transition: 'transform 0.4s ease-in-out',
+                            },
+                            '&:hover': {
+                                color: '#B4D4FF',
+                            },
+                            '&:hover:before': {
+                                transform: 'scaleX(1)',
                             },
                         }}
                     >
@@ -100,8 +182,8 @@ const Navbar = () => {
                 </div>
 
                 <Button
-                    component={Link}
-                    to="/contact"
+                    component="a"
+                    href="#connect"
                     sx={{
                         border: '2px solid #4C9900',
                         color: '#00FF00',

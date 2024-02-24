@@ -1,27 +1,26 @@
 import React, { useState } from 'react'
 import { Typography, Button } from '@mui/material'
-import './connect.css'
+import './work.css'
 
-const Connect = () => {
+const Work = () => {
     return (
         <div
-            className="connect"
+            className="work"
             style={{
                 height: '100vh',
             }}
         >
-            <div className="connect-text">
+            <div className="work-text">
                 <Typography variant="h4" component="div" className="title">
-                    Connect with us
+                    Our Work
                 </Typography>
                 <Typography variant="h6" component="div" className="title">
-                    We are committed to helping businesses grow and thrive in
-                    the digital landscape. Contact us today to learn more about
-                    how we can help your business.
+                    We have worked with a wide range of clients to help them
+                    achieve their digital goals.
                 </Typography>
             </div>
         </div>
     )
 }
 
-export default Connect
+export default Work

@@ -1,0 +1,21 @@
+/* This will change the scrollbar's style */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* This will change the scrollbar track's style */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* This will change the scrollbar handle's style */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    transition: background-color 0.3s ease;
+    /* This will animate the color change */
+}
+
+/* This will change the scrollbar handle's style on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
