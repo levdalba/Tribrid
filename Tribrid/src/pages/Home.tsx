@@ -5,22 +5,9 @@ import './Home.css'
 import Service from './service'
 import Connect from './connect'
 import Work from './work'
+import About from './About'
 import Navbar from '../Navbar'
 const Home = () => {
-    const serviceRef = useRef<HTMLDivElement>(null)
-    const workRef = useRef<HTMLDivElement>(null)
-    useEffect(() => {
-        if (window.location.hash === '#service' && serviceRef.current) {
-            serviceRef.current.scrollIntoView({ behavior: 'smooth' })
-        }
-    }, [])
-
-    useEffect(() => {
-        if (window.location.hash === '#work' && workRef.current) {
-            workRef.current.scrollIntoView({ behavior: 'smooth' })
-        }
-    }, [])
-
     return (
         <div>
             <div
@@ -40,11 +27,14 @@ const Home = () => {
                     <img className="image" src={logo} alt="" />
                 </div>
             </div>
-            <div id="service" ref={serviceRef}>
+            <div id="service">
                 <Service />
             </div>
-            <div id="work" ref={workRef}>
+            <div id="work">
                 <Work />
+            </div>
+            <div id="about">
+                <About />
             </div>
             <div id="connect">
                 <Connect />

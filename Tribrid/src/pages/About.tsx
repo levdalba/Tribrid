@@ -1,53 +1,24 @@
-import React from 'react'
-import { Typography, Box, Container } from '@mui/material'
+import React, { useState } from 'react'
+import { Typography, Button } from '@mui/material'
+import './About.css'
 
-function About() {
+const About = () => {
     return (
-        <div className="about-us-container">
-            <Container maxWidth="md" className="about-us-content fade-in">
-                <Box sx={{ my: 4 }}>
-                    <Typography
-                        variant="h4"
-                        component="h1"
-                        gutterBottom
-                        align="center"
-                        className="about-us-heading"
-                    >
-                        About Us
-                    </Typography>
-                    <Typography
-                        variant="body1"
-                        gutterBottom
-                        className="about-us-text"
-                    >
-                        We're three ambitious students from Georgia, studying
-                        Computer Science at Harbour Space University.
-                    </Typography>
-                    <Typography
-                        variant="body1"
-                        gutterBottom
-                        className="about-us-text"
-                    >
-                        United by our passion for innovation, we're on a mission
-                        to make a positive impact in the tech world.
-                    </Typography>
-                    <Typography
-                        variant="body1"
-                        gutterBottom
-                        className="about-us-text"
-                    >
-                        With diverse skills and a shared vision, we're eager to
-                        push boundaries and shape the future of computing.
-                    </Typography>
-                    <Typography
-                        variant="body1"
-                        gutterBottom
-                        className="about-us-text"
-                    >
-                        Join us as we explore, learn, and create together.
-                    </Typography>
-                </Box>
-            </Container>
+        <div
+            className="about"
+            style={{
+                height: '100vh',
+            }}
+        >
+            <div className="about-text">
+                <Typography variant="h4" component="div" className="title">
+                    About Us
+                </Typography>
+                <Typography variant="h6" component="div" className="title">
+                    We are committed to revolutionizing the digital landscape
+                    for businesses worldwide.
+                </Typography>
+            </div>
         </div>
     )
 }
