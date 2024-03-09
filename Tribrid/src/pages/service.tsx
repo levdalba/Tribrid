@@ -11,11 +11,12 @@ const Service = () => {
         >
             <div className="service-text">
                 <Typography variant="h4" component="div" className="title">
-                    Our Services
+                    Social Media Advertising
                 </Typography>
-                <Typography variant="h6" component="div" className="title">
-                    We offer a wide range of digital services to help businesses
-                    grow and thrive in the digital landscape.
+            </div>
+            <div className="service-text">
+                <Typography variant="h4" component="div" className="title">
+                    Website Development
                 </Typography>
             </div>
         </div>
