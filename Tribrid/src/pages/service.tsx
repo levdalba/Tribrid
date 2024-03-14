@@ -15,7 +15,7 @@ const Service = () => {
                 <img
                     className="socimg"
                     src={social}
-                    style={{ width: '600px', height: '500px' }}
+                    style={{ width: '600px', height: '600px' }}
                     alt=""
                 />
                 <Typography
@@ -40,7 +40,7 @@ const Service = () => {
                 <img
                     className="webimg"
                     src={web}
-                    style={{ width: '600px', height: '500px' }}
+                    style={{ width: '600px', height: '600px' }}
                     alt=""
                 />
             </div>

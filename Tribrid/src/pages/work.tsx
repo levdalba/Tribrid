@@ -12,13 +12,13 @@ const Work = () => {
         >
             <div className="work-text">
                 <Typography variant="h4" component="div" className="title">
-                    Our Work
+                    What we do
                 </Typography>
-                <Typography variant="h6" component="div" className="title">
-                    We have worked with a wide range of clients to help them
-                    achieve their digital goals.
+                <Typography variant="h2" component="div" className="title">
+                    Check out our work
                 </Typography>
             </div>
+            <div className=""></div>
         </div>
     )
 }

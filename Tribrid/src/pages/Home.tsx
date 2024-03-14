@@ -18,9 +18,11 @@ const Home = () => {
             >
                 <div className="welcome-text">
                     <Typography variant="h4" component="div" className="title">
-                        Welcome to TriBrid Digital Agency, where we are
-                        committed to revolutionizing the digital landscape for
-                        businesses worldwide.
+                        <h1>Welcome to TriBrid Digital Agency</h1>{' '}
+                        <h3>
+                            We are committed to revolutionizing the digital
+                            landscape for businesses worldwide.
+                        </h3>
                     </Typography>
                 </div>
                 <div className="welcome-image">

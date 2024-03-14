@@ -23,14 +23,21 @@
 
 .welcome-text {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 80%;
     padding: 20px;
     color: white;
     animation: fadeIn 1s;
+}
+
+.welcome-text .title {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-text .title h1 {
+    margin-bottom: 70px;
 }
 
 .welcome-image {
