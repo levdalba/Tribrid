@@ -11,13 +11,12 @@ const Connect = () => {
             }}
         >
             <div className="connect-text">
-                <Typography variant="h4" component="div" className="title">
+                <Typography
+                    variant="h3"
+                    component="div"
+                    className="title-connect"
+                >
                     Connect with us
-                </Typography>
-                <Typography variant="h6" component="div" className="title">
-                    We are committed to helping businesses grow and thrive in
-                    the digital landscape. Contact us today to learn more about
-                    how we can help your business.
                 </Typography>
             </div>
         </div>

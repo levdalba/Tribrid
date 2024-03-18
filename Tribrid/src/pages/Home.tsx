@@ -32,9 +32,9 @@ const Home = () => {
             <div id="service">
                 <Service />
             </div>
-            <div id="work">
+            {/* <div id="work">
                 <Work />
-            </div>
+            </div> */}
             <div id="about">
                 <About />
             </div>

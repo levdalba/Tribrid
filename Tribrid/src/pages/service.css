@@ -1,10 +1,30 @@
 .service {
-    width: 100%;
     display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
     justify-content: space-around;
-    background-color: #ffffff;
-    /* diagonally divide screen and give diferent colors */
-    background-image: linear-gradient(45deg, #8bcadf 50%, #6a776d 50%);
+
+}
+
+
+
+.service::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../pics/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-mask-image: linear-gradient(to right, rgb(255, 255, 255) 40%, rgb(97, 92, 92) 60%, rgb(112, 108, 108) 100%);
+    mask-image: linear-gradient(to right, rgb(255, 255, 255) 40%, rgb(97, 92, 92) 60%, rgb(90, 87, 87) 100%);
+    filter: blur(1.5px);
+    z-index: -1;
+    transform: rotate(180deg);
 }
 
 
@@ -19,8 +39,10 @@
 
 .service .service-text .title-social {
     display: flex;
+    color: white;
 }
 
 .service .service-text .title-dev {
     display: flex;
+    color: white;
 }

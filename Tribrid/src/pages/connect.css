@@ -1,0 +1,30 @@
+.connect {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+
+}
+
+.connect::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../pics/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-mask-image: linear-gradient(to right, rgb(255, 255, 255) 40%, rgb(97, 92, 92) 60%, rgb(112, 108, 108) 100%);
+    mask-image: linear-gradient(to right, rgb(255, 255, 255) 40%, rgb(97, 92, 92) 60%, rgb(90, 87, 87) 100%);
+    filter: blur(1.5px);
+    z-index: -1;
+    transform: rotate(180deg);
+}
+
+.title-connect {
+    color: white;
+}
