@@ -47,3 +47,7 @@ a .logo-link {
     text-decoration: none;
     color: white
 }
+
+.link {
+    display: flex;
+}
